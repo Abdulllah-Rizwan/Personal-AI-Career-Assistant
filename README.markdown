@@ -1,6 +1,6 @@
-# AI-Agent
+# Overview
 
-A professional AI conversational agent designed to represent Abdullah Rizwan on a personal website, engaging potential employers or clients. The agent answers questions about Abdullah’s career, skills, and projects using a knowledge base, schedules meetings via Google Calendar, records user details and unknown questions, and sends real-time notifications via Pushover. Built with OpenAI’s `gpt-4o-mini`, Groq for response evaluation, Gradio for the UI, and integrated with Google Calendar API, this project showcases a robust, extensible system for professional interactions.
+A professional AI conversational agent designed to represent me, Abdullah Rizwan or anyone on a personal website, engaging potential employers or clients. The agent answers questions about my career, skills, and projects using a knowledge base, schedules meetings via Google Calendar, records user details and unknown questions, and sends real-time notifications via Pushover to me. Built with OpenAI’s `gpt-4o-mini`, Groq for response evaluation, Gradio for the UI, and integrated with Google Calendar API, this project showcases a robust, extensible system for professional interactions.
 
 ## Features
 - **Conversational AI**: Powered by OpenAI’s `gpt-4o-mini`, the agent responds to user queries about Abdullah’s background, skills, and experience.
@@ -12,7 +12,7 @@ A professional AI conversational agent designed to represent Abdullah Rizwan on 
 - **Pushover Notifications**: Sends real-time alerts for scheduled meetings, recorded details, and unknown questions.
 - **Response Evaluation**: Uses Groq’s API to evaluate response quality, ensuring professional and accurate replies.
 - **Gradio UI**: Provides an intuitive chat interface for user interactions.
-- **Type-Safe Code**: Developed in Python with type hints, optimized for Cursor IDE’s Pyright.
+- **Type-Safe Code**: Developed in Python with type hints.
 
 ## Prerequisites
 - **Python**: Version 3.8 or higher.
@@ -22,9 +22,9 @@ A professional AI conversational agent designed to represent Abdullah Rizwan on 
   - Groq API key for response evaluation.
   - Pushover user key and API token for notifications.
 - **Knowledge Base Files**:
-  - `summary.txt`: A text summary of Abdullah’s background.
-  - `linkedin_profile.pdf`: Abdullah’s LinkedIn profile in PDF format.
-  - `project_description.pdf`: Details of Abdullah’s projects in PDF format.
+  - `summary.txt`: A text summary of my background.
+  - `linkedin_profile.pdf`: my LinkedIn profile in PDF format.
+  - `project_description.pdf`: Details of personal projects in PDF format.
 - **System Requirements**: Internet connection for API calls, browser for Google OAuth authentication.
 
 ## Installation
@@ -143,7 +143,7 @@ ai-agent/
 
 ## Testing
 1. **Test Prompts**:
-   - **Career Questions**: “Tell me about Abdullah’s experience.”
+   - **Career Questions**: “Tell me about any prior experience working with LLMs.”
    - **Meeting Scheduling**: “Schedule a meeting for July 15, 2025, at 10:00 AM with email daniel@example.com.”
    - **Contact Details**: “My email is john@example.com, I want to discuss a project.”
    - **Unknown Questions**: “What’s Abdullah’s favorite color?”
@@ -180,8 +180,9 @@ Contributions are welcome! To contribute:
 
 Please ensure code follows Python type hints and passes Pyright checks in Cursor IDE.
 
-## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+## Demo
 
-## Contact
-For questions or support, contact Abdullah Rizwan via [email@example.com](mailto:email@example.com) or through the website’s chat interface.
+
+https://github.com/user-attachments/assets/726fc259-ec93-436f-8dc2-f82ba46d86da
+
+
