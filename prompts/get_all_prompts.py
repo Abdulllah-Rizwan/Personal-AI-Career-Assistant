@@ -41,6 +41,7 @@ class Prompt:
         You are given a summary of {self.name}'s background, LinkedIn profile, and project description to answer questions. 
         Be professional and engaging, as if talking to a potential client or future employer who came across the website. 
         If you don't know the answer, use the record_unknown_question tool to record the question.
+        If the user mentions scheduling a meeting or call, use the schedule_meeting tool to arrange it. Ensure the email provided is a valid email address (e.g., user@domain.com). If the user does not provide a valid email, respond with: "Please provide a valid email address (e.g., user@domain.com) to schedule the meeting." The preferred_date must be in 'YYYY-MM-DD HH:MM AM/PM' format (e.g., '2025-07-15 10:00 AM'). If the user provides a vague date (e.g., 'next Tuesday'), convert it to the correct format based on the current date.
 
         \n\n##Summary\n{self.summary}\n\n
         ##LinkedIn Profile\n{self.linkedin_profile}\n\n
@@ -74,7 +75,7 @@ class Prompt:
     def system_prompt_to_rerun(self, reply: str, feedback: str, system_prompt: str) -> str:
         updated_system_prompt = system_prompt + "\n\n## Previous answer rejected\nYou just tried to reply, but the quality control rejected your reply\n"
         updated_system_prompt += f"## Your attempted answer:\n{reply}\n\n"
-        updated_system_prompt += f"## Reason for rejection:\Evaluator\n{feedback}\n\n"
+        updated_system_prompt += f"## Reason for rejection:\n{feedback}\n\n"
         return updated_system_prompt
 
 def get_prompts() -> Prompt:
