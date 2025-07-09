@@ -1,6 +1,6 @@
 # Overview
 
-A professional AI conversational agent designed to represent me, Abdullah Rizwan or anyone on a personal website, engaging potential employers or clients. The agent answers questions about my career, skills, and projects using a knowledge base, schedules meetings via Google Calendar, records user details and unknown questions, and sends real-time notifications via Pushover to me. Built with OpenAI’s `gpt-4o-mini`, Groq for response evaluation, Gradio for the UI, and integrated with Google Calendar API, this project showcases a robust, extensible system for professional interactions.
+A professional AI conversational agent designed to represent me or anyone on a personal website, engaging potential employers or clients. The agent answers questions about my career, skills, and projects using a knowledge base, schedules meetings via Google Calendar, records user details and unknown questions, and sends real-time notifications via Pushover to me. Built with OpenAI’s `gpt-4o-mini`, Groq for response evaluation, Gradio for the UI, and integrated with Google Calendar API, this project showcases a robust, extensible system for professional interactions.
 
 ## Features
 - **Conversational AI**: Powered by OpenAI’s `gpt-4o-mini`, the agent responds to user queries about Abdullah’s background, skills, and experience.
