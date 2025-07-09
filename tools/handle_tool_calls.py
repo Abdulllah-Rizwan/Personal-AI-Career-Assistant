@@ -1,6 +1,7 @@
 from tools.record_unknown_questions import record_unknown_questions
 from openai.types.chat import ChatCompletionMessageToolCall
 from tools.record_user_detail import record_user_details
+from tools.schedule_meetings import schedule_meeting
 from typing import List, Dict, Any
 import json
 
@@ -8,7 +9,7 @@ import json
 TOOL_REGISTRY = {
     "record_unknown_questions": record_unknown_questions,
     "record_user_details": record_user_details,
-   
+    "schedule_meeting": schedule_meeting
 }
 
 def handle_tool_calls(tool_calls: List[ChatCompletionMessageToolCall]) -> List[Dict[str, Any]]:
